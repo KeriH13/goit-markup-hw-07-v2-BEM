@@ -21,14 +21,17 @@
   width: 70px;
   height: 70px;
 }
-.description-list {
+.description__list {
   list-style-type: none;
   display: flex;
 }
-.description-list .title-list:not(:last-child) {
+.title-list {
+  text-align: start;
+}
+.description__list .title-list:not(:last-child) {
   margin-right: 30px;
 }
-.description-four-times {
+.description {
  padding-bottom: 94px;
 }
 .title-text {
@@ -54,9 +57,7 @@
   height: 75px;
   text-align: start;
 }
-.title-list {
-  text-align: start;
-}
+
 /* -=TEST=- :before SVG 
 .title-list.icon-svg-antenna:before {
   display: flex;

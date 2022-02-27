@@ -12,23 +12,24 @@
   justify-content: center;
   align-items: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      fill: #fff;
-      background-color: var(--main-color);
-    }
-  }
+&:hover,
+&:focus {
+  fill: #fff;
+  background-color: var(--main-color);
+}
+}
 .social-list {
   display: flex;
   /* padding-bottom: 30px; */
+
+&:not(:last-child) {
+  margin-right: 10px;
+}
 }
 .social-pading-bottom {
   padding-bottom: 30px;
 }
-.social-list:not(:last-child) {
-  margin-right: 10px;
-}
+
 
 .what-we-do {
   margin-bottom: 94px;
@@ -53,7 +54,7 @@
 }
 /* === LIST LIST LIST ===*/
 /* PHOTO-LIST */
-.photo-list {
+.portfolio__photo-item {
   margin-bottom: 30px;
   position: relative;
 
@@ -67,14 +68,14 @@
 .show-up-img:hover .show-up {
 transform: translateY(-100%);
 }
-.photo-list:nth-of-type(3n + 1) {
+.portfolio__photo-item:nth-of-type(3n + 1) {
   margin-right: 30px;
 }
-.photo-list:nth-of-type(3n + 2) {
+.portfolio__photo-item:nth-of-type(3n + 2) {
   margin-right: 30px;
 }
-.photo-list:hover, 
-.photo-list:focus {
+.portfolio__photo-item:hover, 
+.portfolio__photo-item:focus {
   /* position: relative; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -82,14 +83,14 @@ transform: translateY(-100%);
   cursor: pointer;
 }
 /* to catch the :hover from li --> photo-list */
-.photo-list:hover .show-up,
-.photo-list:focus .show-up {
+.portfolio__photo-item:hover .show-up,
+.portfolio__photo-item:focus .show-up {
   transform: translateY(-100%);
 }
-.nine-images.section {
+.portfolio.section {
   padding-top: 0px;
 }
-.portfolio-list {
+.portfolio__list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -97,6 +98,9 @@ transform: translateY(-100%);
   padding-top: 0px;
   padding-bottom: 0px;
 }
+/* END PHOTO-LIST */
+/* ===--- END WHAT WE DO /// TEAM /// PROJECT/IMAGES ---=== */
+
 /* === TEAM ===*/
 .employee .container {
   display: flex;

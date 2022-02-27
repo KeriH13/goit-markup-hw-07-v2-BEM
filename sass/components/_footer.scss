@@ -9,38 +9,39 @@ footer {
   min-width: 1200px;
   /* flex-flow: row wrap; */
 }
-.footer-logo {
+.footer-wrapper__logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .adress {
   text-align: start;
-}
+} 
 .studio-item-footer {
   color: #fff;
 }
-.item-list-right-side {
-  display: flex;
-  flex-direction: row;
-}
-.footer-right-side {
+.footer-join-us {
   display: flex;
   flex-direction: column;
   align-items: start;
   padding-left: 70px;
   /* width: 50%; */
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+  &__text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#fff;
+    padding-bottom: 20px;
 }
-.footer-icons {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color:#fff;
-  padding-bottom: 20px;
 }
 .social-image-footer {
   width: 44px;
@@ -48,81 +49,4 @@ footer {
   fill: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
-/* footer form/input */
-.vector-svg {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  /* margin: auto; */
-  transform: translate(-50%, -50%);
-  fill: #000;
-  text-align: center;
-
-  top: 50%;
-  left: 50%;
-}
-.footer__btn-content {
-  position: relative; /* relative for "footer__icon-newsletter" */
-}
-.footer__icon-newsletter {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-    /* display: inline-block; */
-  top: 13px;
-  right: 28px;
-  bottom: 13px;
-  left: 148px;
-}
-
-.footer__header-newsletter {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16.41px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color:#fff;
-  display: flex;
-  align-items: flex-start;
-}
-.footer-form {
-  margin-left: 78px;
-}
-.input__content {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  width: 358px;
-  height: 50px;
-  background: #2F303A;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  color:rgba(255, 255, 255, 0.6);
-  padding: 15px;
-  margin-right: 12px;
-  margin-top: 20px;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-      border-color: var(--main-color);
-      cursor: pointer;
-    }
-}
-.footer__btn-content.btn {
-  margin-top: 20px; /* catch together with input, because they share the same FOR/ID ?????*/
-}
-.footer__sign-up {
-  padding-right: 24px; /* poor method */
 }

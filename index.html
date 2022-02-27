@@ -18,15 +18,15 @@
     <title>WebStudio</title>
 </head>
 <body>
-    <header class="wrapper-all-nav">
+    <header class="navigation">
         <div class="container">
         <a class="logo" href="index.html"><span class="web-item">Web</span><span class="studio-item">Studio</span></a>
         <a href="#"></a>
         <nav>
-            <ul class="navigation">
-                <li class="navigation-list"><a class="sub-navigation first-element-nav" href="index.html">Agencja</a></li>
-                <li class="navigation-list"><a class="sub-navigation" href="portfolio.html">Portfolio</a></li>
-                <li class="navigation-list"><a class="sub-navigation third-element-nav">Kontakt</a></li>
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="sub-navigation first-element-nav" href="index.html">Agencja</a></li>
+                <li class="navigation__item"><a class="sub-navigation" href="portfolio.html">Portfolio</a></li>
+                <li class="navigation__item"><a class="sub-navigation third-element-nav">Kontakt</a></li>
             </ul>
         </nav>
             <div class="contacts">
@@ -97,11 +97,11 @@
                 </ul>
             </div>
         </section>
-        <section class="description-four-times">
+        <section class="description">
             <h2 hidden>Description four times - text</h2>
             <div class="container">
-            <div class="description">
-                <ul class="description-list">
+            <div class="description__wrapper">
+                <ul class="description__list">
                     <li class="title-list icon-svg-antenna"><b class="title-text">LOREM IPSUM</b>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum et 
                             malesuada</p>
@@ -125,7 +125,7 @@
         <!-- WHAT WE DO -->
         <section class="what-we-do">
             <div class="container">
-            <div class="what-we-do-wrapper">
+            <div class="what-we-do__wrapper">
             <h2 class="second-title"><span class="big-first-letter">czym </span>się zajmujemy</h2>
             <div>
                 <ul class="item-list">
@@ -302,38 +302,38 @@
         <section class="customer">
             <div class="container">
                 <h2 class="second-title"><span class="big-first-letter">nasi </span>klienci</h2>
-                <ul class="customer-list">
-                    <li class="customer-item"><a class="customer-image" href="#">
+                <ul class="customer__list">
+                    <li class="customer__item"><a class="customer__image" href="#">
                         <svg class="logo-icon">
                             <use href="./images/icons.svg#icon-Logo-1"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customer-item"><a class="customer-image" href="#">
+                <li class="customer__item"><a class="customer__image" href="#">
                         <svg class="logo-icon">
                             <use href="./images/icons.svg#icon-Logo-2"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customer-item"><a class="customer-image" href="#">
+                <li class="customer__item"><a class="customer__image" href="#">
                         <svg class="logo-icon">
                             <use href="./images/icons.svg#icon-Logo-3"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customer-item"><a class="customer-image" href="#">
+                <li class="customer__item"><a class="customer__image" href="#">
                         <svg class="logo-icon">
                             <use href="./images/icons.svg#icon-Logo-4"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customer-item"><a class="customer-image" href="#">
+                <li class="customer__item"><a class="customer__image" href="#">
                         <svg class="logo-icon">
                             <use href="./images/icons.svg#icon-Logo-5"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="customer-item"><a class="customer-image" href="#">
+                <li class="customer__item"><a class="customer__image" href="#">
                         <svg class="logo-icon">
                             <use href="./images/icons.svg#icon-Logo-6"></use>
                         </svg>
@@ -345,18 +345,18 @@
     </main>
 
     <footer>
-            <div class="footer-wrapper">
+    <div class="footer-wrapper">
             <div class="container">
-            <div class="footer-logo">
+            <div class="footer-wrapper__logo">
         <a class="logo" href="index.html"><span class="web-item">Web</span><span class="studio-item-footer">Studio</span></a>
     
     
-        <address class="bottom-adress">
+        <address class="">
             <ul class="adress">
-                <li class="footer-list"><a class="adress-item map" href="https://goo.gl/maps/Lxkzra3BhB6dTE5c8" target="_blank">m. Warszawa,
+                <li class="adress__list"><a class="adress__item map" href="https://goo.gl/maps/Lxkzra3BhB6dTE5c8" target="_blank">m. Warszawa,
                         Aleje Jerozolimskie 21</a></li>
-                <li class="footer-list"><a class="adress-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="footer-list"><a class="adress-item" href="tel:+48111111111">+48 111 111 111</a></li>
+                <li class="adress__list"><a class="adress__item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="adress__list"><a class="adress__item" href="tel:+48111111111">+48 111 111 111</a></li>
             </ul>
         </address>
         </div>
@@ -366,9 +366,9 @@
 
 
 
-        <div class="footer-right-side">
-            <p class="footer-icons">dołącz do nas</p>
-            <ul class="item-list-right-side">
+        <div class="footer-join-us">
+            <p class="footer-join-us__text">dołącz do nas</p>
+            <ul class="footer-join-us__list">
                 <li class="social-list">
                     <a class="social-image social-image-footer" href="#">
                         <svg class="socialimg">
@@ -402,7 +402,7 @@
 
 
             <form class="footer-form">
-                <p class="footer__header-newsletter">zapisz się do newslettera</p>
+                <p class="footer-form__header-newsletter">zapisz się do newslettera</p>
                 <label for="email">
                     <input class="input__content" type="email" id="email" name="email" placeholder="E-mail" required />
                 </label>
